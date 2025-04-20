@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const gclid = params.get("gclid");
+
+    if (gclid) {
+      console.log("GCLID:", gclid);
+      // позже можно отправить в таблицу
+    } else {
+      console.log("GCLID not found");
+    }
+
+    setTimeout(() => {
+      window.location.href = "https://play.google.com/store/apps/details?id=sanchubas.masterflashcards";
+    }, 100);
+  </script>
+</head>
+<body>
+</body>
+</html>
